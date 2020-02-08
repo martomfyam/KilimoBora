@@ -1,60 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- Title -->
-    <title>Famie - Farm Services &amp; Organic Food Store Template | About</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/classy-nav.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-</head>
+{{--    Head begins here--}}
+{{--Global head--}}
+@include('partials.head')
+{{--    Head ends here--}}
 
 <body>
 <!-- Preloader -->
-<div class="preloader d-flex align-items-center justify-content-center">
-    <div class="spinner"></div>
-</div>
+{{--<div class="preloader d-flex align-items-center justify-content-center">--}}
+{{--    <div class="spinner"></div>--}}
+{{--</div>--}}
 
 <!-- ##### Header Area Start ##### -->
 <header class="header-area">
-    <!-- Top Header Area -->
-    <div class="top-header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="top-header-content d-flex align-items-center justify-content-between">
-                        <!-- Top Header Content -->
-                        <div class="top-header-meta">
-                            <p>Welcome to <span>Farmie</span>, we hope you will enjoy our products and have good
-                                experience</p>
-                        </div>
-                        <!-- Top Header Content -->
-                        <div class="top-header-meta text-right">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom"
-                               title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>Email: infodeercreative@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i
-                                    class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +84 223 9000</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Global Navigation -->
     @include('partials.navbar')
@@ -77,7 +37,7 @@
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">About</li>
             </ol>
         </nav>
@@ -387,140 +347,11 @@
 <!-- ##### Team Member Area End ##### -->
 
 <!-- ##### Footer Area Start ##### -->
-<footer class="footer-area">
-    <!-- Main Footer Area -->
-    <div class="main-footer bg-img bg-overlay section-padding-80-0" style="background-image: url(img/bg-img/3.jpg);">
-        <div class="container">
-            <div class="row">
+{{--    footer begins here--}}
+{{--Global head--}}
+@include('partials.footer')
+{{--    footer ends here--}}
 
-                <!-- Single Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-80">
-                        <a href="#" class="foo-logo d-block mb-30"><img src="img/core-img/logo2.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consecte stare adipiscing elit. In act honcus risus atiner
-                            Pellentesque risus.</p>
-                        <div class="contact-info">
-                            <p><i class="fa fa-map-pin" aria-hidden="true"></i><span>120 Raymond Rd, New York</span></p>
-                            <p><i class="fa fa-envelope" aria-hidden="true"></i><span>info.deercreative@gmail.com</span>
-                            </p>
-                            <p><i class="fa fa-phone" aria-hidden="true"></i><span>+84 223 9000</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-80">
-                        <h5 class="widget-title">QUICK LINK</h5>
-                        <!-- Footer Widget Nav -->
-                        <nav class="footer-widget-nav">
-                            <ul>
-                                <li><a href="#">Purchase</a></li>
-                                <li><a href="#">Policities</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Return</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Payments</a></li>
-                                <li><a href="#">Partners</a></li>
-                                <li><a href="#">Guide</a></li>
-                                <li><a href="#">Standard</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Brands</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-80">
-                        <h5 class="widget-title">RECENT NEWS</h5>
-
-                        <!-- Single Recent News Start -->
-                        <div class="single-recent-blog d-flex align-items-center">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/4.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="#" class="post-title">WA’s largest farming business on the market</a>
-                                <div class="post-date">18 Aug 2018</div>
-                            </div>
-                        </div>
-
-                        <!-- Single Recent News Start -->
-                        <div class="single-recent-blog d-flex align-items-center">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/5.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="#" class="post-title">Beef retail prices hit a record</a>
-                                <div class="post-date">18 Aug 2018</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-80">
-                        <h5 class="widget-title">STAY CONNECTED</h5>
-                        <!-- Footer Social Info -->
-                        <div class="footer-social-info">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <span>Twitter</span>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-pinterest" aria-hidden="true"></i>
-                                <span>Pinterest</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Copywrite Area  -->
-    <div class="copywrite-area">
-        <div class="container">
-            <div class="copywrite-text">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                                                                aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="footer-nav">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Produce</a></li>
-                                    <li><a href="#">Practice</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 <script src="{{ mix('/js/app.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/classynav.js') }}"></script>
